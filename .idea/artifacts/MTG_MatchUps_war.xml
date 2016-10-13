@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="MTG-MatchUps:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="MTG-MatchUps.war">
+      <element id="artifact" artifact-name="MTG-MatchUps:war exploded" />
+    </root>
+  </artifact>
+</component>
