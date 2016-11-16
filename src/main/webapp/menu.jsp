@@ -14,7 +14,6 @@
         </div>
         <ul class="nav navbar-nav">
             <li><a href="index.jsp">Home</a></li>
-            <li><a href="deckGuides.jsp">Decks/Guides</a></li>
             <li><a href="signUp.jsp">Sign Up</a></li>
             <li><a href="login.jsp">Log In</a></li>
         </ul>

@@ -14,36 +14,36 @@
 <jsp:include page="menu.jsp"/>
 <div class="container">
     <h2 align="center">Sign Up</h2>
-    <form class="form-horizontal">
+    <form class="form-horizontal" action="signUp" method="post">
         <div class="form-group">
             <label class="control-label col-sm-4" for="firstName">First Name:</label>
             <div class="col-sm-4">
-                <input type="firstName" class="form-control" id="firstName">
+                <input type="firstName" class="form-control" name="firstName" id="firstName">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-4" for="lastName">Last Name:</label>
             <div class="col-sm-4">
-                <input type="lastName" class="form-control" id="lastName">
+                <input type="lastName" class="form-control" name="lastName" id="lastName">
             </div>
         </div>
 
         <div class="form-group">
             <label class="control-label col-sm-4" for="email">Email address:</label>
             <div class="col-sm-4">
-                <input type="email" class="form-control" id="email">
+                <input type="email" class="form-control" name="email" id="email">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-4" for="username">Username:</label>
             <div class="col-sm-4">
-                <input type="username" class="form-control" id="username">
+                <input type="username" class="form-control" name="username" id="username">
             </div>
         </div>
         <div class="form-group">
             <label class="control-label col-sm-4" for="pwd">Password:</label>
             <div class="col-sm-4">
-                <input type="password" class="form-control" id="pwd">
+                <input type="password" class="form-control" name="password" id="pwd">
             </div>
         </div>
         <div class="form-group">

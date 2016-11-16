@@ -12,17 +12,22 @@
 <jsp:include page="menu.jsp"/>
 <div>
     <h2 align="center">Login</h2>
-    <form class="form-horizontal">
+    <form action="login" method="post" class="form-horizontal">
+
+        <div>
+            ${errorMessage}
+        </div>
+
         <div class="form-group">
             <label class="control-label col-sm-4" for="username">Username:</label>
             <div class="col-sm-4">
-                <input type="username" class="form-control" id="username">
+                <input type="username" class="form-control" id="username" name="username">
             </div>
         </div>
         <div class="form-group">
-            <label class="control-label col-sm-4" for="pwd">Password:</label>
+            <label class="control-label col-sm-4" for="password">Password:</label>
             <div class="col-sm-4">
-                <input type="password" class="form-control" id="pwd">
+                <input type="password" class="form-control" id="password" name="password">
             </div>
         </div>
         <div class="form-group">
@@ -31,6 +36,7 @@
                 <button type="submit" class="btn btn-default">Login</button>
             </div>
         </div>
+
         <div class="form-group">
             <div class="col-sm-offset-5 col-sm-7">
                 <a href="forgotUsername.jsp">Forgot Username?</a>

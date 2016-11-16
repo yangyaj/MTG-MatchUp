@@ -1,0 +1,97 @@
+<dataSource name="MySQL - mtg_matchups@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="mtg_matchups">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="information_schema" />
+    <schema id="3" name="mysql" />
+    <schema id="4" name="performance_schema" />
+    <schema id="5" name="sample" />
+    <schema id="6" name="sys" />
+    <schema id="7" name="week5" />
+    <table id="8" parent="1" name="comments" />
+    <table id="9" parent="1" name="deck_cards" />
+    <table id="10" parent="1" name="decks" />
+    <table id="11" parent="1" name="users" />
+    <column id="12" parent="8" name="comment_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="13" parent="8" name="deck_id">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="14" parent="8" name="DATE">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="15" parent="8" name="username">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="16" parent="8" name="comment">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="17" parent="8" name="PRIMARY">
+      <columns>comment_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="18" parent="9" name="deck_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="19" parent="9" name="cardname">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="20" parent="9" name="board">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="21" parent="9" name="qauntity">
+      <data-type>int(11)|0</data-type>
+    </column>
+    <key id="22" parent="9" name="PRIMARY">
+      <columns>deck_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="23" parent="10" name="deck_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="24" parent="10" name="deck_name">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="25" parent="10" name="username">
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="26" parent="10" name="description">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="27" parent="10" name="PRIMARY">
+      <columns>deck_id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="28" parent="11" name="first_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="29" parent="11" name="last_name">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="30" parent="11" name="username">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <column id="31" parent="11" name="password">
+      <mandatory>1</mandatory>
+      <data-type>varchar(20)|0</data-type>
+    </column>
+    <column id="32" parent="11" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(30)|0</data-type>
+    </column>
+    <key id="33" parent="11" name="PRIMARY">
+      <columns>username</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
