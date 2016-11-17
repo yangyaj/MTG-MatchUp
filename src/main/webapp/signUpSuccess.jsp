@@ -11,6 +11,6 @@
     <title>Sign Up Successful</title>
 </head>
 <body>
- <h2>Thanks for signing up, now you can add your thoughts and ideas to any matchups <a href="deckGuides.jsp">here.</a></h2>
+ <h2>Thanks for signing up, now you can add your thoughts and ideas to any matchups when you login <a href="login.jsp">here.</a></h2>
 </body>
 </html>

@@ -11,6 +11,6 @@
     <title>Login Success</title>
 </head>
 <body>
-    hello!
+    <h2>Click <a href="deckGuides.jsp">here</a> to start viewing guides!</h2>
 </body>
 </html>
